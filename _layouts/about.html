@@ -7,18 +7,11 @@ layout: default
 <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
 {% else %}
 <header class="masthead">
-    {% endif %}
-    <div class="overlay"></div>
+{% endif %}
+<div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-md-10 mx-auto">
-                <div class="page-heading">
-                    <h1>{{ page.title }}</h1>
-                    {% if page.description %}
-                    <span class="subheading">{{ page.description }}</span>
-                    {% endif %}
-                </div>
-            </div>
+            <p></p><!-- Need something here to get the header to display  -->
         </div>
     </div>
 </header>
@@ -27,7 +20,7 @@ layout: default
     <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
             <div class="row" style="margin-bottom: 60px;">
-                <img class="rounded-lg mx-auto d-block" src="https://picsum.photos/300/300" alt="A picture of me!">
+                <img class="about-profile rounded-lg mx-auto d-block" src="https://avatars.githubusercontent.com/u/33064621?v=4" alt="A picture of me!">
             </div>
 
             <div class="row">
