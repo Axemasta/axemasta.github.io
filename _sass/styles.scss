@@ -1,6 +1,7 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 @import "../assets/vendor/pygments/dracula.css";
+@import "tags.scss";
 
 .about-profile {
     max-width: 300px;

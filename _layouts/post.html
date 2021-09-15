@@ -20,6 +20,17 @@ layout: default
             <span class="meta">Posted on
               {{ page.date | date: '%B %d, %Y' }}
             </span>
+
+            {% if page.tags %}
+            <span>
+              <i>
+                Categories: 
+                {% for tag in page.tags %}
+                  {{tag}}
+                {% endfor %}
+              </i>
+            </span>
+            {% endif %}
           </div>
         </div>
       </div>
