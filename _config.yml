@@ -24,3 +24,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+  - rouge
+
+# Syntac highlighting guide for Jekyll, install Rouge & add css for desired theme
+# http://sangsoonam.github.io/2019/01/20/syntax-highlighting-in-jekyll.html

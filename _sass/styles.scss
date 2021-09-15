@@ -1,7 +1,14 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
+@import "../assets/vendor/pygments/dracula.css";
 
 .about-profile {
     max-width: 300px;
     max-height: 300px;
+}
+
+.highlight {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
