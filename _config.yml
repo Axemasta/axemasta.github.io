@@ -1,5 +1,5 @@
 title:              Alex Duffell
-email:              
+# email:              
 description:        Mobile & Cloud Developer
 author:             Alex Duffell
 baseurl:            ""
@@ -18,7 +18,7 @@ google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
 markdown:           kramdown
-paginate:           5
+paginate:           25
 paginate_path:      "/posts/page:num/"
 plugins:
   - jekyll-feed
