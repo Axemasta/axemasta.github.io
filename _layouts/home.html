@@ -33,7 +33,16 @@ layout: default
         {{ content }}
 
         <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+
+        {% for post in site.posts limit : 6 %}
+
+        {% include post-card.html %}
+
+        <hr/>
+
+        {% endfor %}
+
+        <!-- {% for post in site.posts limit : 5 %}
 
         <article class="post-preview">
           <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -59,7 +68,7 @@ layout: default
 
         <hr>
 
-        {% endfor %}
+        {% endfor %} -->
 
         <!-- Pager -->
         <div class="clearfix">
