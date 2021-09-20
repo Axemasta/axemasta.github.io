@@ -13,3 +13,42 @@
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+.vertical-center {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.view-header {
+
+    display: inline-block;
+    width: 361px;
+    margin: 20px auto;
+    min-height: 50px;
+    // padding: 0 15px;
+  
+    .header-icon {
+      font-size: 60px;
+      color: white;
+  
+      width: 68px;
+      float: left;
+  
+      margin: 7px 0;
+
+      line-height: 0;
+    }
+  
+    .header-title {
+      padding-left: 78px;
+  
+      h3 {
+        margin-bottom: 2px;
+      }
+
+      text-align: left;
+  
+    }
+  
+  
+  }
