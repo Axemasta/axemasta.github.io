@@ -5,5 +5,25 @@
 <footer>
   <div class="container">
     {% include social-links.html %}
+
+    <section class="copyright" style="margin-top:10px;">
+      <a href="{{ site.url }}{{ site.baseurl }}">
+        {{ site.title }}
+      </a> &copy;
+      {{  site.time | date: '%Y' }}
+    </section>
+   
+    <section class="copyright">
+      <small>
+        Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using <a href="https://github.com/startbootstrap/startbootstrap-clean-blog-jekyll" target="_blank" rel="noopener">Clean Blog</a>
+      </small>
+    </section>
+
+    <section class="copyright">
+      <small>
+        View the code for this site on <a href="https://github.com/Axemasta/axemasta.github.io" target="_blank" rel="noopener">GitHub <i class="fab fa-github"></i></a>
+      </small>
+    </section>
+
   </div>
 </footer>
