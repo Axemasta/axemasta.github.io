@@ -5,13 +5,15 @@ description: Here I write about cool pieces of tech
 background: '/img/bg-post.jpg'
 ---
 
-{% for post in paginator.posts %}
+<div class="row">
 
-{% include post-card.html %}
+  {% for post in paginator.posts %}
 
-<hr/>
+  {% include post-card.html %}
 
-{% endfor %}
+  {% endfor %}
+
+  </div>
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}

@@ -1,7 +1,30 @@
 // Import Core Clean Blog SCSS
 @import "../assets/vendor/startbootstrap-clean-blog/scss/styles.scss";
 @import "../assets/vendor/pygments/dracula.css";
+@import "global.scss";
 @import "tags.scss";
+@import "cards.scss";
+
+
+body {
+    background: #f4f8fb;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+}
+
+.hidden {
+    visibility: hidden;
+    position: absolute;
+    text-indent: -9999px;
+}
+
 
 .about-profile {
     max-width: 300px;
@@ -26,29 +49,27 @@
     margin: 20px auto;
     min-height: 50px;
     // padding: 0 15px;
-  
+
     .header-icon {
-      font-size: 60px;
-      color: white;
-  
-      width: 68px;
-      float: left;
-  
-      margin: 7px 0;
+        font-size: 60px;
+        color: white;
 
-      line-height: 0;
+        width: 68px;
+        float: left;
+
+        margin: 7px 0;
+
+        line-height: 0;
     }
-  
+
     .header-title {
-      padding-left: 78px;
-  
-      h3 {
-        margin-bottom: 2px;
-      }
+        padding-left: 78px;
 
-      text-align: left;
-  
+        h3 {
+            margin-bottom: 2px;
+        }
+
+        text-align: left;
+
     }
-  
-  
-  }
+}
