@@ -206,7 +206,7 @@ I've lifted out the card classes only
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
-    background: color(var(--darkgrey) l(-5%)) no-repeat center center;
+    background: darken($dark-grey, $amount: 5) no-repeat center center;
     background-size: cover;
 }
 
@@ -506,7 +506,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 .post-card-image {
     width: auto;
     height: 200px;
-    background: var(--lightgrey) no-repeat center center;
+    background: $light-grey no-repeat center center;
     background-size: cover;
 }
 
@@ -514,7 +514,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     position: relative;
     display: block;
     padding: 25px 25px 0;
-    color: var(--darkgrey);
+    color: $dark-grey;
 }
 
 .post-card-content-link:hover {
@@ -577,7 +577,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     text-transform: uppercase;
     float: right;
     margin-top: -4px;
-    color: var(--midgrey);
+    color: $mid-grey;
 }
 
 /* Special Styling for home page grid (below):
@@ -674,7 +674,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--midgrey);
+    color: $mid-grey;
     font-size: 1.4rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -686,7 +686,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-title {
     margin: 0;
-    color: color(var(--darkgrey) l(-5%));
+    color: darken($dark-grey, $amount: 5);
 }
 
 .date-divider {
@@ -697,7 +697,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-image {
     margin: 0 -10vw -165px;
     height: 800px;
-    background: var(--lightgrey) center center;
+    background: $light-grey center center;
     background-size: cover;
     border-radius: 5px;
 }
@@ -824,7 +824,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-full-content strong,
 .post-full-content em {
-    color: color(var(--darkgrey) l(-5%));
+    color: darken($dark-grey, $amount: 5);
 }
 
 .post-full-content small {
@@ -906,7 +906,7 @@ Usage (In Ghost editor):
     font-size: 0.8em;
     line-height: 1em;
     font-weight: 400!important;
-    background: var(--whitegrey);
+    background: $white-grey;
     border-radius: 3px;
 }
 
@@ -915,11 +915,11 @@ Usage (In Ghost editor):
     margin: 1.5em 0 3em;
     padding: 20px;
     max-width: 100%;
-    border: color(var(--darkgrey) l(-10%)) 1px solid;
-    color: var(--whitegrey);
+    border: darken($dark-grey, $amount: 10) 1px solid;
+    color: $white-grey;
     font-size: 1.4rem;
     line-height: 1.5em;
-    background: color(var(--darkgrey) l(-3%));
+    background: darken($dark-grey, $amount: 3);
     border-radius: 5px;
 }
 
@@ -951,7 +951,7 @@ Usage (In Ghost editor):
     margin-left: -10px;
     width: 1px;
     height: 30px;
-    background: color(var(--lightgrey) l(+10%));
+    background: lighten($light-grey, $amount: 10);
     box-shadow: #fff 0 0 0 5px;
     transform: rotate(45deg);
 }
@@ -962,7 +962,7 @@ Usage (In Ghost editor):
 .post-full-content h4,
 .post-full-content h5,
 .post-full-content h6 {
-    color: color(var(--darkgrey) l(-5%));
+    color: darken($dark-grey, $amount: 5);
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
@@ -1124,19 +1124,19 @@ Usage (In Ghost editor):
 }
 
 .post-full-content table th {
-    color: var(--darkgrey);
+    color: $dark-grey;
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.2px;
     text-align: left;
     text-transform: uppercase;
-    background-color: color(var(--whitegrey) l(+4%));
+    background-color: lighten($white-grey, $amount: 4);
 }
 
 .post-full-content table th,
 .post-full-content table td {
     padding: 6px 12px;
-    border: color(var(--whitegrey) l(-1%) s(-5%)) 1px solid;
+    border: saturate(darken($white-grey, $amount: 1) , $amount: 5) 1px solid;
 }
 
 
@@ -1170,7 +1170,7 @@ Usage (In Ghost editor):
 }
 
 .author-card-name a {
-    color: var(--darkgrey);
+    color: $dark-grey;
     font-weight: 700;
 }
 
@@ -1180,7 +1180,7 @@ Usage (In Ghost editor):
 
 .author-card-content p {
     margin: 0;
-    color: var(--midgrey);
+    color: $mid-grey;
     line-height: 1.3em;
 }
 
@@ -1192,8 +1192,8 @@ Usage (In Ghost editor):
 .author-card-button {
     display: block;
     padding: 9px 16px;
-    border: color(var(--midgrey) l(+20%)) 1px solid;
-    color: var(--midgrey);
+    border: lighten($mid-grey, $amount: 20) 1px solid;
+    color: $mid-grey;
     font-size: 1.2rem;
     line-height: 1;
     font-weight: 500;
@@ -1236,7 +1236,7 @@ Usage (In Ghost editor):
     margin: 0 20px 40px;
     padding: 25px;
     color: #fff;
-    background: var(--darkgrey) center center;
+    background: $dark-grey center center;
     background-size: cover;
     border-radius: 5px;
     box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
@@ -1398,7 +1398,7 @@ Usage (In Ghost editor):
 .floating-header-logo a {
     display: flex;
     align-items: center;
-    color: var(--darkgrey);
+    color: $dark-grey;
     line-height: 1.1em;
     font-weight: 700;
 }
@@ -1661,7 +1661,7 @@ Usage (In Ghost editor):
 
 .error-description {
     margin: 0;
-    color: var(--midgrey);
+    color: $mid-grey;
     font-size: 3rem;
     line-height: 1.3em;
     font-weight: 400;
@@ -1692,7 +1692,7 @@ Usage (In Ghost editor):
     padding-top: 20px;
     padding-bottom: 60px;
     color: #fff;
-    background: color(var(--darkgrey) l(-15%));
+    background: darken($dark-grey, $amount: 15);
 }
 
 .site-footer-content {
