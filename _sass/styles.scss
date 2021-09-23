@@ -57,7 +57,7 @@ body {
         width: 68px;
         float: left;
 
-        margin: 7px 0;
+        margin: auto 0;
 
         line-height: 0;
     }
@@ -69,7 +69,21 @@ body {
             margin-bottom: 2px;
         }
 
+        h2 {
+            margin: unset;
+        }
+
         text-align: left;
 
+    }
+}
+
+.fa-lg {
+    font-size: 2em;
+}
+
+.navbar {
+    svg {
+        font-size: 2em;
     }
 }
