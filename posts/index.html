@@ -9,6 +9,7 @@ background: '/img/bg-post.jpg'
 
   {% for post in paginator.posts %}
 
+  {% assign delay-offset = forloop.index | minus: 1 | modulo: 3 | times: 300 %}
   {% include post-card.html %}
 
   {% endfor %}

@@ -1,4 +1,4 @@
-<article class="post-card home-template">
+<article class="post-card home-template" data-aos="zoom-in-up" data-aos-delay="{{ delay-offset }}" data-aos-duration="1000">
     <a class="post-card-image-link" href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
         <div class="post-card-image" style="background-image: url('{{ post.background | prepend: site.baseurl | replace: '//', '/' }}')"></div>
     </a>
@@ -8,6 +8,8 @@
                 <span class="post-card-category">{{ post.category}}</span>
                 <h2 class="post-card-title">{{ post.title}}</h2>
             </header>
+
+            <h1>Offset: {{ delay-offset }}</h1>
 
             {% if post.subtitle %}
             <section class="post-card-excerpt">
